@@ -2,7 +2,7 @@
 // Licensed under the Mozilla Public License v2.0
 
 provider "oci" {
-  region              = "uk-london-1"
+  region              = "ap-seoul-1"
   ignore_defined_tags = ["testexamples-tag-namespace.tf-example-tag"]
 }
 

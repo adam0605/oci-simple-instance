@@ -3,11 +3,6 @@ variable "compartment_ocid" {
   type = string
 }
 
-variable "kms_key_ocid" {
-  default = ""
-  type = string
-}
-
 variable "region" {
   default = "ap-seoul-1"
   description = "Region"
@@ -59,7 +54,7 @@ variable "num_paravirtualized_volumes_per_instance" {
 }
 
 variable "instance_shape" {
-  default = "VM.Standard.E3.Flex"
+  default = "VM.Standard3.Flex"
 }
 
 variable "instance_image_ocid" {
@@ -82,5 +77,6 @@ variable "flex_instance_image_ocid" {
     us-ashburn-1 = "ocid1.image.oc1.iad.aaaaaaaa6tp7lhyrcokdtf7vrbmxyp2pctgg4uxvt4jz4vc47qoc2ec4anha"
     eu-frankfurt-1 = "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaadvi77prh3vjijhwe5xbd6kjg3n5ndxjcpod6om6qaiqeu3csof7a"
     uk-london-1 = "ocid1.image.oc1.uk-london-1.aaaaaaaaw5gvriwzjhzt2tnylrfnpanz5ndztyrv3zpwhlzxdbkqsjfkwxaq"
+    ap-seoul-1 = "ocid1.image.oc1.ap-seoul-1.aaaaaaaast3fargdyrporyvvlg2hlgkmd5znqox2wqkpion5bxu6lepgbrha"
   }
 }

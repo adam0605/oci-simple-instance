@@ -25,7 +25,7 @@ resource "oci_core_instance" "test_instance" {
     # Otherwise, the default boot volume size of the image is used.
     # This should only be specified when source_type is set to "image".
     #boot_volume_size_in_gbs = "60"
-    kms_key_id = var.kms_key_ocid
+    // kms_key_id = var.kms_key_ocid
   }
 
   # Apply the following flag only if you wish to preserve the attached boot volume upon destroying this instance
@@ -34,7 +34,7 @@ resource "oci_core_instance" "test_instance" {
   #preserve_boot_volume = true
 
   metadata = {
-    ssh_authorized_keys = var.ssh_public_key
+    // ssh_authorized_keys = var.ssh_public_key
     // user_data           = base64encode(file("./userdata/bootstrap"))
   }
 #  defined_tags = {
