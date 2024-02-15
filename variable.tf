@@ -78,5 +78,6 @@ variable "flex_instance_image_ocid" {
     eu-frankfurt-1 = "ocid1.image.oc1.eu-frankfurt-1.aaaaaaaadvi77prh3vjijhwe5xbd6kjg3n5ndxjcpod6om6qaiqeu3csof7a"
     uk-london-1 = "ocid1.image.oc1.uk-london-1.aaaaaaaaw5gvriwzjhzt2tnylrfnpanz5ndztyrv3zpwhlzxdbkqsjfkwxaq"
     ap-seoul-1 = "ocid1.image.oc1.ap-seoul-1.aaaaaaaast3fargdyrporyvvlg2hlgkmd5znqox2wqkpion5bxu6lepgbrha"
+    me-jeddah-1 = "ocid1.image.oc1.me-jeddah-1.aaaaaaaa3cygvzfin4ft6a2aj5k6qdtlxmlun2lsnhx7lhgaytytsagvulvq"
   }
 }
