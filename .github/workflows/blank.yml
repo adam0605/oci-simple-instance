@@ -40,7 +40,6 @@ jobs:
           echo " ECHO Env : $GITHUB_WORKSPACE  "
           echo "  Echo ENV  With env : $FGITHUB_WORKSPACE  "
         env:
-          TEST_ENV: ${{ GITHUB_WORKSPACE }}
           FGITHUB_WORKSPACE: ${{ github.repository}}
       - name: ENV TEST2
         run: |
