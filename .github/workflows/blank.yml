@@ -56,4 +56,5 @@ jobs:
       - name: Print secret value
         run: echo "DONGWOO_DB_PORT is $DONGWOO_DB_PORT"
         env:
-          DONGWOO_DB_PORT: ${{ secrets.DONGWOO_DB_PORT }}
+          DONGWOO_DB_PORT: ${{ secrets.DONGWOO_PORT }}
+          DONGWOO: ${{ secrets.ABC }}
