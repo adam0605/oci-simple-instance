@@ -45,9 +45,11 @@ jobs:
       - name: Print custom secret variable
         run: | 
           echo "DONGWOO_DB_NAME is $DONGWOO_DB_NAME"
-          echo "DONGWOO_PORT is ${{ secrets.DONGWOO_PORT }}" | base64 --decode
+          echo "DONGWOO_PORT is ${{ secrets.DONGWOO_PORT }}"
           echo "DONGWOO is ${{ vars.DONGWOO }}"
           echo "ABC is ${{ vars.ABC }}"
           echo "ENVIR_VAR is ${{ vars.ENVIR_VAR }}"
+          echo "DONGWOO_PORT is $(echo -n "$DONGWOO_PORT" | base64)"
         env:
           DONGWOO_DB_NAME: ${{ secrets.DONGWOO_DB_NAME }}
+          DONGWOO_PORT: ${{ secrets.DONGWOO_PORT }}
