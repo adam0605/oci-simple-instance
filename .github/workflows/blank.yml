@@ -36,6 +36,8 @@ jobs:
           echo test, and deploy your project.
 
       - name: ENV TEST
-        run: echo $TEST_ENV
+        run: echo "$TEST_ENV"
         env:
           TEST_ENV: ${{ secrets.DOWGWOO_DB_NAME }}
+      - name: ENV TEST2
+        run: echo "$secrets.DOWGWOO_DB_NAME"
