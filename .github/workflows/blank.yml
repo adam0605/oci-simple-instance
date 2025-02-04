@@ -35,10 +35,13 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-      - name: ENV TEST
-        run: env
+      - name:  TEST With env
+        run: |
+          echo " ECHO Env : $GITHUB_WORKSPACE  "
+          echo "  Echo ENV  With env : $FGITHUB_WORKSPACE  "
         env:
-          TEST_ENV: ${{ secrets.DOWGWOO_DB_NAME }}
+          TEST_ENV: ${{ GITHUB_WORKSPACE }}
+          FGITHUB_WORKSPACE: ${{ github.repository}}
       - name: ENV TEST2
         run: |
            echo "test :  $secrets.DOWGWOO_DB_NAME"
