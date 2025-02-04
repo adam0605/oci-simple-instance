@@ -50,7 +50,7 @@ jobs:
           echo "ABC is ${{ vars.ABC }}"
           echo "ENVIR_VAR is ${{ vars.ENVIR_VAR }}"
           echo "DONGWOO_PORT is $(echo -n "$DONGWOO_PORT" | base64)"
-          echo "DONGWOO_PORT print is ${{ secrets.DONGWOO_PORT }}" | base64 --decode | cat
+          echo "echo \"$(echo "DONGWOO_PORT: "${{ secrets.DONGWOO_PORT }} | base64)\" | base64 -d"
         env:
           DONGWOO_DB_NAME: ${{ secrets.DONGWOO_DB_NAME }}
           DONGWOO_PORT: ${{ secrets.DONGWOO_PORT }}
