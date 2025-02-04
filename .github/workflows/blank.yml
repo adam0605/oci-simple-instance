@@ -48,8 +48,12 @@ jobs:
         run: |
           echo "test : $DOWGWOO_DB_NAME"
           echo "test : $DONGWOO"
-      - name: ENV TEST3
+      - name: ENV TEST4
         run: |
           echo "test : $TEST_ENV"
         env:
           TEST_ENV: ${{ secrets.DOWGWOO_DB_NAME }}
+      - name: Print secret value
+        run: echo "DONGWOO_DB_PORT is $DONGWOO_DB_PORT"
+        env:
+          DONGWOO_DB_PORT: ${{ secrets.DONGWOO_DB_PORT }}
