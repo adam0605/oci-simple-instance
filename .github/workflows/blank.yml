@@ -45,6 +45,7 @@ jobs:
       - name: ENV TEST3
         run: |
           echo "test : $DOWGWOO_DB_NAME"
+          echo "test : $DONGWOO"
       - name: ENV TEST3
         run: |
           echo "test : $TEST_ENV"
